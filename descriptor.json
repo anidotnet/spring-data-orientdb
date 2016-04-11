@@ -4,14 +4,17 @@
     "repo": "maven",
     "subject": "anidotnet"
   },
-
   "version": {
     "name": "0.10.0"
   },
-
-  "files":
-  [
-    {"includePattern": "*/target/(.*)", "excludePattern": "*/target/.*.zip$", "uploadPattern": "/$1"}
+  "files": [
+    {
+      "includePattern": "(.*)*/target/(.*\\.jar)",
+      "uploadPattern": "/$2",
+      "matrixParams": {
+        "override": 1
+      }
+    }
   ],
   "publish": true
 }
