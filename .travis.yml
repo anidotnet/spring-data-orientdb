@@ -7,3 +7,4 @@ deploy:
   file: descriptor.json
   user: anidotnet
   key: "c04758c0fbd8e4f596d392611b9ebdd377459acb"
+  on: orange-dev
